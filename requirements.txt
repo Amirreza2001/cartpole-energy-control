@@ -1,0 +1,12 @@
+numpy>=1.26
+scipy>=1.11
+matplotlib>=3.8
+sympy>=1.12
+control>=0.10
+pillow>=10
+pytest>=8
+# Later work packages:
+# casadi>=3.6       # WP4 MPC
+# do-mpc>=4.6       # WP4 MPC (alternative)
+# gymnasium>=1.0    # WP5 RL environment
+# stable-baselines3>=2.3   # WP5 RL (installs torch)
