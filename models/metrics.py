@@ -18,19 +18,22 @@ def mechanical_energy(res):
     return float(np.sum(np.abs(res.u * xd_mid)) * res.params.dt)
 
 
-def settling_time(res, tol_deg=1.0):
-    """First time after which |theta| stays within tol_deg for good [s].
+def settling_time(res, tol_deg=1.0, t_event=0.0):
+    """Time from t_event until |theta| stays within tol_deg for good [s].
 
+    t_event is the push time (S2) or reference step time (S3), 0 otherwise.
     Returns np.inf if the angle never settles.
     """
-    th = np.rad2deg(np.abs(res.states[:, 2]))
+    mask = res.t >= t_event - 1e-9
+    t = res.t[mask]
+    th = np.rad2deg(np.abs(res.states[mask, 2]))
     outside = np.where(th > tol_deg)[0]
     if len(outside) == 0:
         return 0.0
     last = outside[-1]
     if last == len(th) - 1:
         return np.inf
-    return float(res.t[last + 1])
+    return float(t[last + 1] - t_event)
 
 
 def max_angle_deg(res, t_from=0.0):

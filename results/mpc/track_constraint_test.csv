@@ -1,0 +1,6 @@
+controller,success,total
+PID,24,36
+LQR,14,36
+MPC N=20,19,36
+MPC N=40,19,36
+RL,30,36

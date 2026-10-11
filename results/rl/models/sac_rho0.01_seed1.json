@@ -1,0 +1,14 @@
+{
+  "rho": 0.01,
+  "seed": 1,
+  "steps": 150000,
+  "minutes": 16.39429498910904,
+  "algo": "SAC",
+  "net_arch": [
+    128,
+    128
+  ],
+  "gamma": 0.995,
+  "lr": 0.0003,
+  "reward": "v2: max(0, 1 - 5*(e_x^2 + theta^2 + rho*u^2)), -100 on failure"
+}
