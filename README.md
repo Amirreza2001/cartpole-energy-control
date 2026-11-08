@@ -5,6 +5,12 @@ which controller keeps the pendulum upright with the least control energy,
 at comparable accuracy?
 
 By Amirreza Mohamadi and Reza Ghorbani. Team portfolio project, Python, simulation only.
+## Team
+
+| | Main contributions |
+|---|---|
+| Reza Ghorbani | Equations of motion (Lagrange method), model validation |
+| Amirreza Mohamadi | Simulator, controllers, evaluation, report |
 Report: [`docs/report/report.pdf`](docs/report/report.pdf) ·
 Demo video: [`results/demo_video.mp4`](results/demo_video.mp4)
 
