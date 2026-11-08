@@ -4,7 +4,7 @@ PID vs. LQR vs. MPC vs. Reinforcement Learning on a cart-pole system:
 which controller keeps the pendulum upright with the least control energy,
 at comparable accuracy?
 
-Team project, 2 students, 13 weeks. Python, simulation only.
+By Amirreza Mohamadi and Reza Ghorbani. Team portfolio project, Python, simulation only.
 Report: [`docs/report/report.pdf`](docs/report/report.pdf) ·
 Demo video: [`results/demo_video.mp4`](results/demo_video.mp4)
 
